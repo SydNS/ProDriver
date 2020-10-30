@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Views.MainActivity"
+    android:background="#4CAF50">
+<RelativeLayout
+    android:visibility="gone"
+    android:id="@+id/phonedetails"
+    android:padding="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:id="@+id/phonenumber"
+        android:hint="@string/phone_number"
+        tools:ignore="MissingClass">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/phonenumberdata"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/verifyButton"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phonenumber"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/signupbtnbg"
+        android:text="@string/verify_your_phone_number"/>
+</RelativeLayout>
+
+    <TextView
+        android:id="@+id/splash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pda"
+        android:textColor="#fff"
+        android:textSize="60sp"
+        android:layout_centerInParent="true"/>
+
+    <RelativeLayout
+        android:id="@+id/buttons"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/splash"
+        android:layout_marginTop="100dp">
+        <Button
+            android:drawableLeft="@drawable/phonenumber"
+            android:background="@drawable/signupbtnbg"
+            android:id="@+id/signinwithphone"
+            android:layout_width="300dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_up_with_phone_number"
+            android:layout_marginBottom="10dp"
+            android:drawableStart="@drawable/phonenumber" />
+
+        <Button
+            android:drawableLeft="@drawable/mail"
+            android:background="@drawable/signupbtnbg"
+            android:id="@+id/signinwithgoogle"
+            android:layout_width="300dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_up_with_google"
+            android:layout_below="@+id/signinwithphone"
+            android:drawableStart="@drawable/mail" />
+    </RelativeLayout>
+
+</RelativeLayout>

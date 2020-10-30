@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/darker_gray"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="10dp"
+    android:layout_margin="3dp">
+    <RelativeLayout
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/title"
+            android:textSize="12sp"
+            android:gravity="top"
+            android:padding="3dp"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:text="@string/dummytext1"/>
+
+        <TextView
+            android:layout_below="@+id/title"
+            android:id="@+id/infoDesc"
+            android:textSize="20sp"
+            android:gravity="top"
+            android:padding="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:text="@string/dummytext2"/>
+
+
+        <TextView
+            android:layout_alignEnd="@id/infoDesc"
+            android:layout_alignBottom="@id/infoDesc"
+            android:layout_margin="3dp"
+            android:textSize="12sp"
+            android:gravity="top"
+            android:padding="3dp"
+            android:id="@+id/datetime"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/dummytext3"
+            android:layout_alignRight="@id/infoDesc" />
+
+        <TextView
+            android:layout_alignStart="@id/infoDesc"
+            android:layout_alignBottom="@id/infoDesc"
+            android:layout_margin="3dp"
+            android:textSize="12sp"
+            android:gravity="top"
+            android:padding="3dp"
+            android:id="@+id/author"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/dummytext4"
+            android:layout_alignRight="@id/infoDesc"
+            android:layout_alignLeft="@id/infoDesc"
+            android:layout_alignEnd="@id/infoDesc" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
